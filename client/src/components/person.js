@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
 
 import Container from 'react-bootstrap/Container'
@@ -25,10 +21,10 @@ export default class Person extends Component {
                     <Card.Body style={{textAlign: 'center', justifyContent: 'space-between'}}>
                       <Card.Title style={{textAlign:'center', fontWeight: 'bold'}}>Name of Person</Card.Title>
                       <Card.Text style={{fontSize:'12px'}}>
-                      Entrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the world's 
+                      Entrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the world&apos;s 
                       largest software business, Microsoft, through technological innovation, keen business strategy and aggressive 
                       business tactics. In the process, Gates became one of the richest men in the world. In February 2014, Gates 
-                      announced that he was stepping down as Microsoft's chairman to focus on charitable work at his foundation, 
+                      announced that he was stepping down as Microsoft&apos;s chairman to focus on charitable work at his foundation, 
                       the Bill and Melinda Gates Foundation.
                       </Card.Text>
                     </Card.Body>
@@ -57,10 +53,10 @@ export default class Person extends Component {
                   <Col xs={12} md={12}>
                     <Card style={{ width: '100%' }}>
                       <Card.Body>
-                        <Card.Title>How do you know what you know if you know that you don't know what you know?</Card.Title>
+                        <Card.Title>How do you know what you know if you know that you don&apos;t know what you know?</Card.Title>
                         <Card.Text>
                           Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
+                          the card&apos;s content.
                         </Card.Text>
                         <Card.Text>
                           06/23/2020 Source: Reddit
@@ -71,10 +67,10 @@ export default class Person extends Component {
                   <Col xs={12} md={12} style={{marginTop:"20px"}}>
                     <Card style={{ width: '100%' }}>
                       <Card.Body>
-                        <Card.Title>How do you know what you know if you know that you don't know what you know?</Card.Title>
+                        <Card.Title>How do you know what you know if you know that you don&apos;t know what you know?</Card.Title>
                         <Card.Text>
                           Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
+                          the card&apos;s content.
                         </Card.Text>
                         <Card.Text>
                           06/23/2020 Source: Reddit
@@ -85,10 +81,10 @@ export default class Person extends Component {
                   <Col xs={12} md={12} style={{marginTop:"20px"}}>
                     <Card style={{ width: '100%' }}>
                       <Card.Body>
-                        <Card.Title>How do you know what you know if you know that you don't know what you know?</Card.Title>
+                        <Card.Title>How do you know what you know if you know that you don&apos;t know what you know?</Card.Title>
                         <Card.Text>
                           Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
+                          the card&apos;s content.
                         </Card.Text>
                         <Card.Text>
                           06/23/2020 Source: Reddit
@@ -99,10 +95,10 @@ export default class Person extends Component {
                   <Col xs={12} md={12} style={{marginTop:"20px"}}>
                     <Card style={{ width: '100%' }}>
                       <Card.Body>
-                        <Card.Title>How do you know what you know if you know that you don't know what you know?</Card.Title>
+                        <Card.Title>How do you know what you know if you know that you don&apos;t know what you know?</Card.Title>
                         <Card.Text>
                           Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
+                          the card&apos;s content.
                         </Card.Text>
                         <Card.Text>
                           06/23/2020 Source: Reddit
