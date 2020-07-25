@@ -7,6 +7,7 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/app';
 import Home from './components/home';
+import Person from './components/person';
 import Public from './components/public';
 import Account from './components/account';
 import Signin from './components/auth/signin';
@@ -28,10 +29,12 @@ if (token) {
 }
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter hashType="noslash">
+    <HashRouter hashType="slash">
       <App>
         <Switch>
           <Route exact path="/" component= {Home} />
+          <Route path="/home" component= {Home} />
+          <Route path="/person" component= {Person} />
           <Route path="/public" component= {Public} />
           <Route path="/account" component= {RequireAuth(Account)} />
           <Route path="/signin" component= {Signin} />

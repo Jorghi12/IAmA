@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
 
 class Header extends Component {
     renderSignButton(){
@@ -26,8 +29,16 @@ class Header extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand-sm navbar-light bg-light">
-                <NavLink className="navbar-brand" to="/">MERN</NavLink>
+            <nav className="navbar navbar-expand-sm navbar-light bg-white">
+                <Navbar bg="white" expand="lg">
+                    <Navbar.Brand href="/" style={{fontWeight:'bold', fontSize:'28px'}}>AMA</Navbar.Brand>
+                </Navbar>
+                <Nav.Link href="#politics" className="ml-auto" style={{color: 'black'}}>People</Nav.Link>
+                <Nav.Link href="#business"  style={{color: 'black'}}>Topics</Nav.Link>
+                <Button variant="outline-dark" style={{width: '120px', marginRight:'20px'}}>Ask</Button>{' '}
+
+
+                {/*<NavLink className="navbar-brand" to="/">MERN</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -43,7 +54,7 @@ class Header extends Component {
                     <ul className="navbar-nav">
                         {this.renderSignButton()}
                     </ul>
-                </div>
+        </div>*/}
             </nav>
         )
     }

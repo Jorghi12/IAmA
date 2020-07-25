@@ -31,6 +31,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}));
 app.get('/ping', (req, res) => res.send('pong'))
 app.get('/', (req, res) => res.json({'source': 'https://github.com/amazingandyyy/mern'}))
+app.get('/person', (req, res) => res.json({'source': 'https://github.com/amazingandyyy/mern'}))
+
 app.post('/signup', Authentication.signup)
 app.post('/signin', Authentication.signin)
 app.get('/auth-ping', Middlewares.loginRequired, (req, res) => res.send('connected'))
