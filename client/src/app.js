@@ -8,6 +8,7 @@ import reduxThunk from 'redux-thunk';
 import App from './components/app';
 import Home from './components/home';
 import Splash from './components/splash';
+import Game from './components/game';
 import Person from './components/person';
 import Public from './components/public';
 import Account from './components/account';
@@ -35,7 +36,8 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component= {Splash} />
           <Route path="/person/:user" component= {Person} />
-          <Route path="/home" component= {Home} />
+          <Route path="/quote_search" component= {Home} />
+          <Route path="/what" component= {Game} />
           <Route path="/person" component= {Person} />
           <Route path="/public" component= {Public} />
           <Route path="/account" component= {RequireAuth(Account)} />

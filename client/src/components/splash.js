@@ -24,7 +24,7 @@ export default class App extends Component {
                     <br></br>
                     Ama is a database of quotes from famous people and a game to tell which ones are real and which are fake.
                   </Card.Text>
-                  <a href="/#/home"><Button variant="dark" style={{width: '150px', height:'46px', backgroundColor:'black'}}>Let&apos;s Go</Button></a>
+                  <a href="/#/quote_search"><Button variant="dark" style={{width: '150px', height:'46px', backgroundColor:'black'}}>Let&apos;s Go</Button></a>
                 </Card.Body>
               </Card>
             </Col>
