@@ -7,6 +7,7 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/app';
 import Home from './components/home';
+import Splash from './components/splash';
 import Person from './components/person';
 import Public from './components/public';
 import Account from './components/account';
@@ -32,7 +33,8 @@ ReactDOM.render(
     <HashRouter hashType="slash">
       <App>
         <Switch>
-          <Route exact path="/" component= {Home} />
+          <Route exact path="/" component= {Splash} />
+          <Route path="/person/:user" component= {Person} />
           <Route path="/home" component= {Home} />
           <Route path="/person" component= {Person} />
           <Route path="/public" component= {Public} />

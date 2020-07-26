@@ -33,28 +33,9 @@ class Header extends Component {
                 <Navbar bg="white" expand="lg">
                     <Navbar.Brand href="/" style={{fontWeight:'bold', fontSize:'28px'}}>AMA</Navbar.Brand>
                 </Navbar>
-                <Nav.Link href="#politics" className="ml-auto" style={{color: 'black'}}>People</Nav.Link>
-                <Nav.Link href="#business"  style={{color: 'black'}}>Topics</Nav.Link>
-                <Button variant="outline-dark" style={{width: '120px', marginRight:'20px'}}>Ask</Button>{' '}
-
-
-                {/*<NavLink className="navbar-brand" to="/">MERN</NavLink>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/public">Public</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/account">Account</NavLink>
-                        </li>
-                    </ul>
-                    <ul className="navbar-nav">
-                        {this.renderSignButton()}
-                    </ul>
-        </div>*/}
+                <Nav.Link href="/#/what" className="ml-auto" style={{color: 'black'}}>What&apos;s Real or Fake?</Nav.Link>
+                <Nav.Link href="/#/quote_search"  style={{color: 'black', fontWeight: 'bold'}}>Quote Search</Nav.Link>
+                <Button variant="outline-dark" style={{width: '120px', marginRight:'20px'}}>FAKE IT</Button>{' '}
             </nav>
         )
     }

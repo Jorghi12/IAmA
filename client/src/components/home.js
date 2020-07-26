@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
@@ -20,13 +19,13 @@ export default class App extends Component {
                   <Form inline>
                       <Form.Control style={{width: '400px'}} type="text" placeholder="Search People or Topic" className="mr-sm-2" />
                   </Form>
-                  <Nav className="mr-auto" style={{marginLeft:'20px'}}>
+                  {/*<Nav className="mr-auto" style={{marginLeft:'20px'}}>
                       <Nav.Link href="#politics" style={{color: 'black'}}>Politics</Nav.Link>
                       <Nav.Link href="#business" style={{color: 'black'}}>Business</Nav.Link>
                       <Nav.Link href="#science" style={{color: 'black'}}>Science & Tech</Nav.Link>
                       <Nav.Link href="#entertainment" style={{color: 'black'}}>Entertainment</Nav.Link>
                       <Nav.Link href="#other" style={{color: 'black'}}>Other</Nav.Link>
-                  </Nav>
+                  </Nav>*/}
               </Navbar.Collapse>
           </Navbar>
         </nav>
@@ -41,10 +40,10 @@ export default class App extends Component {
                   marginLeft: 'auto', marginRight: 'auto', display: 'block', 
                   borderRadius: '50%', height:'200px', width:'200px'}} 
                   variant="top" src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X.jpg" />
-                <Card.Body>
-                  <Card.Title>Name</Card.Title>
+                <Card.Body style={{textAlign:'center'}}>
+                  <Card.Title>Bill Gates</Card.Title>
                   <Card.Title>18138 quotes</Card.Title>
-                  <Button variant="link" style={{color: 'black', marginLeft:'-12px'}}>See more</Button>
+                  <a href="/#/person/billgates" variant="link" style={{color: 'black', marginLeft:'0px', textDecoration: 'underline'}}>See more</a>
                 </Card.Body>
               </Card>
             </Col>
