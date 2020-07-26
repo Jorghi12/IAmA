@@ -32,6 +32,46 @@ export default {
         });
     },
 
+    submitQuestion: (req, res, next) => {
+        var person_name = req.param('person_name')
+        var question = req.param('question')
+        var answer = req.param('answer')
+
+        PersonModel.findOne({name: person_name}, function (err, person){
+            if (err) { 
+                console.log(err); 
+                return res.status(401).send(err || 'Invalid Person')
+            } 
+            else
+            { 
+                QuestionModel.create(
+                    {
+                        person: person._id,
+                        personName: person_name,
+                        info: {
+                            question: question,
+                            answer: answer
+                        },
+                        source: {
+                            date: new Date(),
+                            name: "Anonymous",
+                            link: "IAmA"
+                        },
+                        votes: {
+                            total: 0,
+                            votedFake: 0,
+                            votedReal: 0
+                        },
+                        isReal: "fake"
+                    }
+                );
+
+                res.json({"success": true})
+                next()
+            }
+        });
+    },
+
     pullPerson: (req, res, next) => {
         var person_name = req.params.person_name;
         console.log("Show all people!!!");

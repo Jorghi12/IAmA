@@ -184,7 +184,7 @@ export default class Person extends Component {
                         {this.state.questions[this.state.gameIndex].voted ? 
                         <div>
                           <Card.Text style={{marginTop:'10px', fontSize:'16px', textAlign: 'center'}}>
-                            <b style={{color: this.state.questions[this.state.gameIndex].correct ? "green" : "red"}}>{this.state.questions[this.state.gameIndex].correct ? "CORRECT!" : "WRONG!"}</b> {moment(this.state.questions[this.state.gameIndex].source.date).format('MM/DD/YYYY') || "06/23/2020"} Source: {this.state.questions[this.state.gameIndex].source.name || ""}
+                            <b style={{color: this.state.questions[this.state.gameIndex].correct ? "green" : "red"}}>{this.state.questions[this.state.gameIndex].correct ? "CORRECT!" : "WRONG!"}</b> {moment(this.state.questions[this.state.gameIndex].source.date).format('MM/DD/YYYY') || "06/23/2020"} Source: {<a href={this.state.questions[this.state.gameIndex].source.link}>{this.state.questions[this.state.gameIndex].source.name}</a> || ""}
                           </Card.Text>
                           <Container fluid="true" style={{}}>
                             <Row style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
@@ -218,34 +218,34 @@ export default class Person extends Component {
                 </Row>
               </Container>
             </Col>
-                  <Col xs={1} md={1} style={{opacity:'1'}}>
-                    <Button 
-                      disabled={!this.state.canGo}
-                      onClick={() => this.incrementGameIndex()} 
-                      variant="light" 
-                      style={{
-                        backgroundColor: 'transparent',
-                        boxShadow: 'none !important',
-                        border: 'none',
-                        color:'black',
-                        opacity:'1',
-                        fontWeight:'bold',
-                        marginTop:'-30px',
-                        marginLeft:'0px', width:'46%', 
-                        height:'100%'}}>
-                        <FontAwesome
-                          className='super-crazy-colors'
-                          name='caret-right'
-                          size='2x'
-                          //spin
-                          style={{
-                            color: this.state.canGo ? '#00009c' : 'black',
-                            fontSize:'200px', 
-                            opacity:'1',
-                            textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' 
-                          }}></FontAwesome>
-                    </Button>
-                  </Col>
+            <Col xs={1} md={1} style={{opacity:'1'}}>
+              <Button 
+                disabled={!this.state.canGo}
+                onClick={() => this.incrementGameIndex()} 
+                variant="light" 
+                style={{
+                  backgroundColor: 'transparent',
+                  boxShadow: 'none !important',
+                  border: 'none',
+                  color:'black',
+                  opacity:'1',
+                  fontWeight:'bold',
+                  marginTop:'-30px',
+                  marginLeft:'0px', width:'46%', 
+                  height:'100%'}}>
+                  <FontAwesome
+                    className='super-crazy-colors'
+                    name='caret-right'
+                    size='2x'
+                    //spin
+                    style={{
+                      color: this.state.canGo ? '#00009c' : 'black',
+                      fontSize:'200px', 
+                      opacity:'1',
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' 
+                    }}></FontAwesome>
+              </Button>
+            </Col>
 
 
 
